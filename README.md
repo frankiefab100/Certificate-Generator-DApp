@@ -1,2 +1,2 @@
 # Certificate-Generator-DApp
-A diecentralized Application that generates Certificate of completion for Online courses.
+A decentralized Application that generates Certificate of completion for Online courses.
