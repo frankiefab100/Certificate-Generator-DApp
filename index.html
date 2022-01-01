@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <title>Certificate Generator DApp</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="#default" class="logo"></a>
+      <div class="header-right">
+        <button>Login</button>
+        <a href="issueCertificate.html">Get Certificate</a>
+      </div>
+    </div>
+
+    <div style="text-align: center">
+      <br /><br />
+      <img src="./img/" width="115" height="130" />
+      <br /><br /><br />
+      <button
+        onclick="connectToMetaMask()"
+        class="buttonZero"
+        style="text-align: center"
+      ></button>
+    </div>
+
+    <div class="search" style="text-align: center">
+      <input
+        type="text"
+        id="certificateID"
+        name="certificateID"
+        class="searchTerm"
+        placeholder="Enter Certificate ID to View"
+      />
+      <button onclick="getCertificateDetails()" class="searchButton">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/web3.min.js"></script>
+    <script src="./scripts/jquery.min.js"></script>
+  </body>
+</html>
