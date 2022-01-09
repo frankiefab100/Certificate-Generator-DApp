@@ -8,25 +8,33 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Futura|Merriweather&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/style.css" />
     <title>View Certificate</title>
   </head>
 
   <body>
-    <body>
-      <div class="container pm-certificate-container">
+    <div class="certificate-wrapper">
+      <div class="container certificate-container">
         <div class="outer-border"></div>
         <div class="inner-border"></div>
 
-        <div class="pm-certificate-border col-xs-12">
-          <div class="row pm-certificate-header">
-            <div class="pm-certificate-title cursive col-xs-12 text-center">
+        <div class="certificate-border col-xs-12">
+          <div class="row certificate-header">
+            <div class="certificate-title cursive col-xs-12 text-center">
               <h2>Blockchain Technology Institute</h2>
+              <span id="certificateID" class="bold block"
+                >Certificate No.:
+              </span>
+              <p class="certificate-subheader">CERTIFICATE OF COMPLETION</p>
             </div>
           </div>
 
-          <div class="row pm-certificate-body">
-            <div class="pm-certificate-block">
+          <div class="row certificate-body">
+            <div class="certificate-block">
               <div class="col-xs-12">
                 <div class="row">
                   <div class="col-xs-2">
@@ -34,15 +42,15 @@
                   </div>
                   <div
                     class="
-                      pm-certificate-name
+                      certificate-name
                       underline
                       margin-0
                       col-xs-8
                       text-center
                     "
                   >
-                    <span id="candidateName" class="pm-name-text bold">
-                      Name
+                    <span id="candidateName" class="name-text bold">
+                      First Name Last Name
                     </span>
                   </div>
                   <div class="col-xs-2">
@@ -56,11 +64,11 @@
                   <div class="col-xs-2">
                     <!-- LEAVE EMPTY -->
                   </div>
-                  <div class="pm-earned col-xs-8 text-center">
-                    <span class="pm-earned-text padding-0 block cursive"
+                  <div class="earned col-xs-8 text-center">
+                    <span class="earned-text padding-0 block cursive"
                       >has earned</span
                     >
-                    <span id="grade" class="pm-credits-text block bold sans">
+                    <span id="grade" class="credits-text block bold sans">
                       __ Grade
                     </span>
                   </div>
@@ -76,9 +84,9 @@
                   <div class="col-xs-2">
                     <!-- LEAVE EMPTY -->
                   </div>
-                  <div class="pm-course-title col-xs-8 text-center">
-                    <span class="pm-earned-text block cursive"
-                      >while completing the training course entitled</span
+                  <div class="course-title col-xs-8 text-center">
+                    <span class="earned-text block cursive"
+                      >FOR COMPLETION OF</span
                     >
                   </div>
                   <div class="col-xs-2">
@@ -92,11 +100,8 @@
                   <div class="col-xs-2">
                     <!-- LEAVE EMPTY -->
                   </div>
-                  <div class="pm-course-title underline col-xs-8 text-center">
-                    <span
-                      id="courseName"
-                      class="pm-credits-text block bold sans"
-                    >
+                  <div class="course-title underline col-xs-8 text-center">
+                    <span id="courseName" class="credits-text block bold sans">
                       Course Name
                     </span>
                   </div>
@@ -109,24 +114,17 @@
 
             <div class="col-xs-12">
               <div class="row">
-                <div class="pm-certificate-footer">
-                  <div class="col-xs-4 pm-certified col-xs-4 text-center">
-                    <span class="pm-credits-text block sans"
-                      >Place: Lagos, Nigeria</span
-                    ><br />
+                <div class="certificate-footer">
+                  <div class="col-xs-4 certified col-xs-4 text-center">
                     <span class="bold block underline">(sd/-)</span>
-                    <span class="bold block">Director, Institute</span>
+                    <span class="bold block">Program Manager</span>
                   </div>
                   <div class="col-xs-4">
                     <!-- LEAVE EMPTY -->
                   </div>
-                  <div class="col-xs-4 pm-certified col-xs-4 text-center">
-                    <span id="date" class="pm-credits-text block sans"
-                      >Date Completed:
-                    </span>
-                    <br /><br /><br />
-                    <span id="certificateID" class="bold block"
-                      >Certificate No#:
+                  <div class="col-xs-4 certified col-xs-4 text-center">
+                    <span id="date" class="credits-text block sans"
+                      >Presented on:
                     </span>
                   </div>
                 </div>
@@ -135,6 +133,6 @@
           </div>
         </div>
       </div>
-    </body>
+    </div>
   </body>
 </html>

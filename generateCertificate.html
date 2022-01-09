@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Futura|Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <title>Generate Certificate</title>
+  </head>
+  <body>
+    <header id="header">
+      <a href="index.html" class="logo"
+        ><img src="./img/logo.png" alt="logo"
+      /></a>
+      <div class="header-right">
+        <button onclick="connectToMetaMask()" class="connectbtn">
+          Connect Wallet
+        </button>
+      </div>
+    </header>
+
+    <form action="" class="entry-form">
+      <h1 id="title">Certificate Entry Form</h1>
+      <div class="form-group">
+        <label for="candidateName">Candidate Name</label>
+        <input
+          type="text"
+          class="form-control"
+          name="candidateName"
+          id="candidateName"
+          placeholder="Full Name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="courseName">Select Course</label>
+        <select class="form-control" name="courseName" id="courseName">
+          <option disabled selected>Choose your completed course</option>
+          <option>Certified Blockchain Developer Ethereum (CBDE)</option>
+          <option>Certified Blockchain Solution Associate (CBSA)</option>
+          <option>Certified Blockchain Business Foundations (CBBF)</option>
+          <option>
+            Certified Blockchain Developer Hyperledger Fabric (CBDH)
+          </option>
+          <option>Certified Blockchain Developer Corda (CBDC)</option>
+          <option>Certified Blockchain Security Professional (CBSP)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="certificateID">Certificate ID</label>
+        <input
+          type="text"
+          class="form-control"
+          name="certificateID"
+          id="certificateID"
+          placeholder="Certificate ID"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="grade">Select Grade</label>
+        <select class="form-control" id="grade" name="grade" id="grade">
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+          <option>D</option>
+          <option>E</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Issue Date</label>
+        <input type="date" id="date" name="date" required />
+      </div>
+
+      <div>
+        <button
+          onclick="generateCertificate()"
+          class="btn btn-info"
+          type="submit"
+        >
+          Generate Certificate
+        </button>
+      </div>
+    </form>
+
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/web3.min.js"></script>
+    <script src="./scripts/jquery.min.js"></script>
+  </body>
+</html>
